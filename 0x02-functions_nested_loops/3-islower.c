@@ -3,7 +3,7 @@
 /**
  * _islower - checks if
  * c is lowercase
- *
+ * @c: integer being checked
  * Return: 1 if lowercase
  */
 
