@@ -3,14 +3,17 @@
 /**
  * print_last_digit - computes and prints last digit
  * @a: number inserted
- * Rerurn: the last digit
+ * Return: the last digit
  */
 
 int print_last_digit(int a)
 {
 	int b;
 
-	b = a % 10;
-	_putchar(b);
-	return (b);
+	if (a < 0)
+		b = -1 * (a % 10);
+	else
+		b = a % 10
+	_putchar((b % 10) + '0');
+	return (b % 10);
 }
