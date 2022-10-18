@@ -1,7 +1,4 @@
-#include <stdio.h>
-#include <main.h>
-
-int putchar(void);
+#include "main.h"
 
 /**
  * main - Entry point
@@ -11,19 +8,13 @@ int putchar(void);
 
 int main(void)
 {
-	putchar();
-	return (0);
-}
-
-int putchar(void)
-{
-	char a[9] = "_putchar";
-	int b;
-
-	for (b = 0; b <= 9; b++)
-	{
-		putchar(a[b]);
-	}
-	putchar('\n');
+	_putchar('_');
+	_putchar('p');
+	_putchar('u');
+	_putchar('t');
+	_putchar('c');
+	_putchar('h');
+	_putchar('a');
+	_putchar('r');
 	return (0);
 }
