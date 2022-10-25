@@ -13,21 +13,21 @@ void puts_half(char *str)
 
 	while (str[length] != '\0')
 		length++;
-	if (length % 2 == 0)
+	while (length % 2 == 0)
 	{
 		if (i >= (length / 2))
+		{
+			while (str[i] != '\0')
 			{
-				while (str[i] != '\0')
-				{
 				_putchar(str[i]);
 				i++;
-				}
 			}
+		}
 		else
 			i++;
 
 	}
-	else if (length % 2 != 0)
+	while (length % 2 != 0)
 	{
 		if (i >= ((length - 1) / 2))
 		{
