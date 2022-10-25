@@ -15,7 +15,7 @@ void puts_half(char *str)
 		length++;
 	if (length % 2 == 0)
 	{
-		while (i >= (length / 2) $$ str[i] != '\0')
+		while (i >= (length / 2) && str[i] != '\0')
 		{
 			_putchar(str[i]);
 			i++;
